@@ -10,21 +10,11 @@ h1 {
     font-size: xx-large;
 }
 
-#experience {
-    margin: 0 auto;
-}
-
-#connect {
-    margin: 0 auto;
+section {
+    margin: auto;
 }
 
 
-head {
-    font-size: large;
-    color: rgb(241, 53, 109);
-    font-weight: 600;
-
-}
 .skills {
     background-color: #228b22;
     padding: 10px;
