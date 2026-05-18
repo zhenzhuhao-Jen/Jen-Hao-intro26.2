@@ -47,6 +47,9 @@ h2 {
 
 .my-experiences {
     display: flex;
+    list-style-type: none;
+    gap: 30px;
+    padding: 0;
 
 }
 .column {
