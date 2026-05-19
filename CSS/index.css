@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(241, 217, 243);
+    color: rgb(241, 53, 109);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    margin:10px 20px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+section {
+    margin: 20px 0;
+}
+#about {
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color:purple;
+}
+
+
+.skills {
+    background-color: #228b22;
+    padding: 10px;
+    border:solid pink 5px;
+    width: 100px;
+    color: white;
+    margin: 10px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.social {
+    background-color: rgb(75, 229, 235);
+    padding: 10px;
+    border:solid yellow 5px;
+    width: 100px;
+    color: black;
+    margin: 10px;
+    list-style-type: none;
+}
+
+.my-experiences {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    padding: 0;
+
+}
+.column {
+    
+    width: 250px;
+    text-align: center;
+}
+
+.findmeat {
+    display: flex;
+
+}
