@@ -11,7 +11,7 @@ h1 {
 }
 
 section {
-    margin: 20px 0;
+    margin: 50px 0;
 }
 #about {
     text-align: center;
@@ -24,7 +24,7 @@ h2 {
 }
 
 
-.skills {
+h3 {
     background-color: #228b22;
     padding: 10px;
     border:solid pink 5px;
@@ -60,5 +60,12 @@ h2 {
 
 .findmeat {
     display: flex;
+
+}
+
+.skills {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
 
 }
