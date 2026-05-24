@@ -53,19 +53,23 @@ h3 {
 
 }
 .column {
-    
     width: 250px;
     text-align: center;
 }
 
 .findmeat {
     display: flex;
-
 }
 
 .skills {
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
-
 }
+
+@media screen and(min-width: 1206px) and (max-width: 2622px){
+    h2 {
+        font-weight: 1000;
+    }
+}
+
