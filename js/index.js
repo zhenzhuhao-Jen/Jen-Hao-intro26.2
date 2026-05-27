@@ -29,7 +29,7 @@ for(let i = 0; i < skills.length; i++){
 };
 
 
-const messageForm = document.querySelector('form[name]');//problems?
+const messageForm = document.querySelector('form[name="leave_message"]');//problems?
 
 messageForm.addEventListener("submit",function(event){
     event.preventDefault();
