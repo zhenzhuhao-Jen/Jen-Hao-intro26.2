@@ -1,11 +1,12 @@
 body {
+    margin:0;
     background-color: rgb(241, 217, 243);
     color: rgb(241, 53, 109);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h1 {
-    margin:10px 20px;
+    margin:40px 20px;
     text-align: center;
     font-size: xx-large;
 }
@@ -18,8 +19,8 @@ section {
 }
 
 h2 {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 22px;
+    font-weight: 1800;
     color:purple;
 }
 
@@ -71,5 +72,31 @@ h3 {
     h2 {
         font-weight: 1000;
     }
+}
+
+form {
+    margin:10px 0 10px 20px;
+}
+input{
+    margin:5px 0 10px 0;
+}
+textarea {
+    margin:5px 0 10px 0;
+}
+
+
+.navbar {
+    display: Flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-weight: bold;
+    background-color:beige;
+    font-size: 20px;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    background-color: rgb(160, 160, 211);
+    font-weight: bold;
 }
 
