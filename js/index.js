@@ -76,6 +76,7 @@ messageForm.addEventListener("submit",function(event){
        const projectSection = document.querySelector('#projects');
        const projectList = projectSection.querySelector('ul');
       
+      
        for(let i = 0; i < repositories.length; i++){
            const project = document.createElement('li');
            project.textContent = repositories[i].name;
@@ -84,6 +85,10 @@ messageForm.addEventListener("submit",function(event){
     })
     .catch(error=>{
         console.log('An error occured', error);
+        const projectSection = document.querySelector('#projects');
+        const para = document.createElement('p');
+        para.textContent = error;
+        projectSection.append(para);
     })
     
     
