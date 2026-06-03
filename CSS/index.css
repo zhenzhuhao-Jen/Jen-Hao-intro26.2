@@ -68,7 +68,7 @@ h3 {
     list-style-type: none;
 }
 
-@media screen and(min-width: 1206px) and (max-width: 2622px){
+@media screen and (min-width: 1206px) and (max-width: 2622px){
     h2 {
         font-weight: 1000;
     }
