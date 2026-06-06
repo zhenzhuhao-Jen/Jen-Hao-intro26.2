@@ -1,5 +1,5 @@
 body {
-    margin:0;
+    
     background-color: rgb(241, 217, 243);
     color: rgb(241, 53, 109);
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -68,7 +68,7 @@ h3 {
     list-style-type: none;
 }
 
-@media screen and(min-width: 1206px) and (max-width: 2622px){
+@media screen and (min-width: 1206px) and (max-width: 2622px){
     h2 {
         font-weight: 1000;
     }
@@ -100,3 +100,8 @@ button[type="submit"] {
     font-weight: bold;
 }
 
+.repos {
+    padding: 15px;
+    font-weight: bold;
+    display:flex;
+}

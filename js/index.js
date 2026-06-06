@@ -39,7 +39,7 @@ messageForm.addEventListener("submit",function(event){
     console.log(usersName, usersEmail, usersMessage);
 
 
-    messageSection = document.querySelector('#messages');
+    const messageSection = document.querySelector('#messages');
     messageList = messageSection.querySelector('ul');
     newMessage = document.createElement('li');
     newMessage.innerHTML += 
@@ -61,3 +61,35 @@ messageForm.addEventListener("submit",function(event){
 
     messageForm.reset();
 });
+
+
+
+ fetch("https://api.github.com/users/zhenzhuhao-Jen/repos")
+    .then(response=>{
+        if(!response.ok){
+            throw new Error('No data found');
+        }
+        return response.json();  
+    })
+    .then(repositories=>{
+       console.log(repositories);
+       const projectSection = document.querySelector('#projects');
+       const projectList = projectSection.querySelector('ul');
+      
+      
+       for(let i = 0; i < repositories.length; i++){
+           const project = document.createElement('li');
+           project.textContent = repositories[i].name;
+           projectList.appendChild(project);
+       }
+    })
+    .catch(error=>{
+        console.log('An error occured', error);
+        const projectSection = document.querySelector('#projects');
+        const para = document.createElement('p');
+        para.textContent = error;
+        projectSection.append(para);
+    })
+    
+    
+
