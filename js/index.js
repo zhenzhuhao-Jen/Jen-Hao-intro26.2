@@ -29,7 +29,7 @@ for(let i = 0; i < skills.length; i++){
 };
 
 
-const messageForm = document.querySelector('form[name="leave_message"]');//problems?
+const messageForm = document.querySelector('form[name="leave_message"]');
 
 messageForm.addEventListener("submit",function(event){
     event.preventDefault();
@@ -84,7 +84,7 @@ messageForm.addEventListener("submit",function(event){
        }
     })
     .catch(error=>{
-        console.log('An error occured', error);
+        console.log('An error occurred', error);
         const projectSection = document.querySelector('#projects');
         const para = document.createElement('p');
         para.textContent = error;
