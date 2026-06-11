@@ -20,12 +20,12 @@ const nameForm = document.querySelector('form[name="dog-pic"]');
 
 nameForm.addEventListener("submit", function(event){
     event.preventDefault();
-    fetch(" https://api.thedogapi.com/v1/images/BJa4kxc4X", 
+    fetch("https://api.thedogapi.com/v1/images/BJa4kxc4X", 
        {headers: {"x-api-key": "live_DyQ3ytNC42MhbJkWWFzKwZveqGhfOFe11qINqH6dDPqV3MATmjkXbqXwNDWR78Ei"}})
     .then(response => response.json())
     .then(data => {console.log(data);
         
-        h2.innerHTML = `<image src=${data.url} alt="dogPic">`;
+        h2.innerHTML = `<img src=${data.url} alt="dogPic">`;
       
     })
     .catch(error=>console.error("error", error))
@@ -37,7 +37,7 @@ const descForm = document.querySelector('form[name="breed-description"]');
 descForm.addEventListener("submit", function(event){
     event.preventDefault();
     
-    fetch(" https://api.thedogapi.com/v1/breeds/1", 
+    fetch("https://api.thedogapi.com/v1/breeds/1", 
       {headers: {"x-api-key": "live_DyQ3ytNC42MhbJkWWFzKwZveqGhfOFe11qINqH6dDPqV3MATmjkXbqXwNDWR78Ei"}})
     .then( response => response.json())
     .then(data => {console.log(data);
