@@ -1,4 +1,4 @@
-
+//Insert the copyright logo, current year, and name in the footer
 const footerElement = document.createElement('footer');
 const bodyElement = document.querySelector('body')
 bodyElement.appendChild(footerElement);
@@ -17,7 +17,7 @@ copyright.innerHTML = "Zhenzhu Hao " + thisYear + "&copy";
 footer.appendChild(copyright);
 
 
-
+//insert the array items as a list of skills 
 const skills = ["JavaScript", "HTML", "CSS", "GitHub"];
 const skillsSection = document.querySelector('#skills');
 const skillsList = skillsSection.querySelector('ul');
@@ -28,7 +28,7 @@ for(let i = 0; i < skills.length; i++){
     skillsList.appendChild(skill);
 };
 
-
+//add eventlistener to message form 
 const messageForm = document.querySelector('form[name="leave_message"]');
 
 messageForm.addEventListener("submit",function(event){
@@ -38,7 +38,7 @@ messageForm.addEventListener("submit",function(event){
     const usersMessage = event.target.usersMessage.value;
     console.log(usersName, usersEmail, usersMessage);
 
-
+//dosplay user's message
     const messageSection = document.querySelector('#messages');
     messageList = messageSection.querySelector('ul');
     newMessage = document.createElement('li');
@@ -63,7 +63,7 @@ messageForm.addEventListener("submit",function(event){
 });
 
 
-
+//fetch github repository
  fetch("https://api.github.com/users/zhenzhuhao-Jen/repos")
     .then(response=>{
         if(!response.ok){
