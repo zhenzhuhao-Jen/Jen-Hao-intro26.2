@@ -1,0 +1,14 @@
+body {
+    background-color:bisque;
+}
+
+button[type="submit"] {
+    background-color: blanchedalmond;
+    border: solid rgb(199, 90, 90) 2px;
+}
+
+.navbar {
+    list-style-type: none;
+    font-style: italic;
+    font-size: 25px;
+}
